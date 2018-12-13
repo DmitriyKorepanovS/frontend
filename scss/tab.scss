@@ -1,0 +1,12 @@
+.tab {
+	display: none;
+	@include flex-wrap;
+	background-color: $color-main;
+	padding: $padding-tab;
+	max-height: 333px;
+	overflow: auto;
+}
+
+.tab--active {
+	@include display-flex;
+}

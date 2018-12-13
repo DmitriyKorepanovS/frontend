@@ -1,0 +1,18 @@
+.nav {
+	background:$color-secondary;
+}
+
+.nav__item {
+	display: inline-block;
+	text-decoration: none;
+	background: $color-third;
+	color: $color-main;
+	border-bottom: 0;
+	padding: $padding-nav;
+	border-radius: 5px 5px 0 0;
+}
+
+.nav__item--current {
+	background: $color-main;
+	color: $color-black;
+}

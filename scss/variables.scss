@@ -1,0 +1,24 @@
+$color-main: white;
+$color-secondary: lightgray;
+$color-third: #1672af;
+$color-link: blue;
+$color-green: rgb(29, 185, 29);
+$color-orange:#ff8b0e;
+$color-black: black;
+$color-hover: mix(white, $color-third, 50%);
+
+$margin: 5px;
+$padding-interests: 2px;
+$padding-nav: 5px;
+$padding-tab: 20px;
+$padding-data: 0 0 0 20px;
+$padding-data-media: 0 0 0 24px;
+$padding-information: 0 0 0 10px;
+$padding-friend-info: 0 0 0 5px;
+
+$font-stack: "Times New Roman",
+Times,
+serif;
+$main-font-size: 16px;
+$big-font-size: $main-font-size * 1.25;
+$font-weight-title: bold;

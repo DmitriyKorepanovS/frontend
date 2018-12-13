@@ -1,0 +1,27 @@
+.wrap-friend {
+	overflow: auto;
+	@include display-flex;
+	@include flex-wrap;
+}
+
+.friend {
+	@include display-flex;
+	width: 47%;
+	margin: $margin;
+
+
+	&__info {
+		padding: $padding-friend-info;
+	}
+
+	&__status {
+		color: $color-green;
+		font-style: italic;
+	}
+
+	&__item {
+		width: 100px;
+		height: 100px;
+	}
+
+}

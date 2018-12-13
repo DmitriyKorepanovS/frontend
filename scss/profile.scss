@@ -1,0 +1,65 @@
+.content {
+	@include display-flex;
+}
+
+.profile {
+	&__avatar {
+		background: url(images/userpic.png) top left no-repeat;
+		width: 132px;
+		height: 169px;
+		background-size: contain;
+	}
+
+	&__btn {
+		background: $color-orange;
+		color: $color-main;
+		height: 40px;
+		border-radius: 5px;
+	}
+}
+
+.information {
+	@include display-flex;
+	@include flex-column;
+	padding: $padding-information;
+	width: 100%;
+	line-height: 1.5;
+
+	&__about-user {
+		@include display-flex;
+	}
+}
+
+.user-name {
+	font-weight: $font-weight-title;
+	font-size: $big-font-size;
+}
+
+.user-name-input,
+.family-status,
+.phone-number,
+.email-input {
+	display: none;
+}
+
+.data {
+	padding: $padding-data;
+}
+
+.titles {
+	width: 50%;
+	font-weight: $font-weight-title;
+}
+
+.text-style-city {
+	color: $color-secondary;
+}
+
+.text-bold {
+	font-weight: $font-weight-title;
+}
+
+.text-underlined-colored {
+	text-decoration: underline;
+	color: $color-link;
+}

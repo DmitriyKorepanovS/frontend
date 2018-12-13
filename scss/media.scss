@@ -1,0 +1,50 @@
+@media (max-width: 769px) {
+	.main {
+		height: 90%;
+		width: 90%;
+	}
+
+	.tab {
+		max-height: 100%;
+	}
+}
+
+@media (max-width: 525px) {
+	.content {
+		@include flex-column;
+	}
+
+	.tab {
+		max-height: 90%;
+	}
+
+	.profile {
+		@include display-flex;
+		height: 130px;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.titles {
+		width: 30%;
+
+	}
+
+	.data {
+		padding:$padding-data-media;
+	}
+
+	.profile__avatar {
+		width: 100px;
+		height: 128px;
+	}
+	.friend {
+		width: auto;
+	}
+}
+
+@media (max-width: 420px) {
+	.friend {
+		width: 100%;
+	}
+}

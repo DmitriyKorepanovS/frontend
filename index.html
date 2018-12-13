@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Social network</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+
+            <nav class="nav" id="navigation">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--current">Профиль</li>
+                    <li class="nav__item">Друзья пользователя</li>
+                </ul>
+            </nav>
+
+            <section class="tab tab--active">
+                <div class="content">
+                    <div class="profile">
+                        <div class="profile__avatar"></div>
+                        <p><button class="profile__btn">Добавить в друзья</button></p>
+                    </div>
+                    <div class="information">
+                        <div class="information__nameAndCity" id="name">
+                            <p class="user-name" id="userName"></p>
+                            <input class="user-name-input" id="input" type="text">
+                            <p class="text-style-city">г. Нижние Шахты</p>
+                        </div>
+                        <div class="information__about-user">
+                            <div class="titles">
+                                <p>Cемейное положение</p>
+                                <p>Телефон</p>
+                                <p>E-mail</p>
+                            </div>
+                            <div class="data" id="data">
+                                <input class="family-status" id="familyStatus">
+                                <p id="statusInfo"></p>
+                                <input class="phone-number" id="phoneNumberInput">
+                                <p id="phoneNumber"></p>
+                                <input class="email-input" id="emailInput">
+                                <p id="emailData" class="text-underlined-colored"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="information__interest">
+                            <h3 class="text-bold">Интересы</h3>
+                            <form id="formInterest">
+                                <input type="text" id="interestInput">
+                                <div class="new-interest" id="newInterest">Добавить интерес</div>
+                            </form>
+                            <ul id="sectionInterest">
+                                <li class="interests">Музыка</li>
+                                <li class="interests">Компьютеры</li>
+                                <li class="interests">Радио</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tab">
+                <div class="wrap-friend">
+
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/lev.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Лев Бронштейн</a></p>
+                            <p class="friend__city">г. Ханты-Мансийск</p>
+                            <p class="friend__status">Online</p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/nahodka.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Находка Капитал</a></p>
+                            <p class="friend__city">г. Усть-Бельск</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/yandex.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Яндекс Петренко</a></p>
+                            <p class="friend__city">г. Пермь</p>
+                            <p class="friend__status"></p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/uspeh.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Успех Возможностей</a></p>
+                            <p class="friend__city">г. Радонеж</p>
+                            <p class="friend__status">Online</p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/inna.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Инна Нашлась</a></p>
+                            <p class="friend__city">г. Омск</p>
+                            <p class="friend__status"></p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/alla.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Алла Подольская</a></p>
+                            <p class="friend__city">г. Петропавловск-Камчатский</p>
+                            <p class="friend__status">Online</p>
+                        </div>
+                    </div>
+                    <div class="friend">
+                        <div class="friend__avatar"><img class="friend__item" src="images/nahodka.png" alt="avatar"></div>
+                        <div class="friend__info">
+                            <p class="friend__name"><a href="url">Находка Капитал</a></p>
+                            <p class="friend__city">г. Усть-Бельск</p>
+                            <p class="friend__status">Online</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/variable.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
