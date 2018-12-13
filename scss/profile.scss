@@ -18,48 +18,47 @@
 	}
 }
 
-.information {
+.wrap-about-user {
 	@include display-flex;
 	@include flex-column;
 	padding: $padding-information;
 	width: 100%;
 	line-height: 1.5;
 
-	&__about-user {
+}
+
+.user-info {
+	&__details {
 		@include display-flex;
 	}
-}
 
-.user-name {
-	font-weight: $font-weight-title;
-	font-size: $big-font-size;
-}
+	&__name {
+		font-weight: $font-weight-title;
+		font-size: $big-font-size;
+	}
 
-.user-name-input,
-.family-status,
-.phone-number,
-.email-input {
-	display: none;
-}
+	&__change-name-input,
+	&__change-family-status-input,
+	&__change-phone-input,
+	&__change-email-input {
+		display: none;
+	}
 
-.data {
-	padding: $padding-data;
-}
+	&__data {
+		padding: $padding-data;
+	}
 
-.titles {
-	width: 50%;
-	font-weight: $font-weight-title;
-}
+	&__titles-details {
+		width: 50%;
+		font-weight: $font-weight-title;
+	}
 
-.text-style-city {
-	color: $color-secondary;
-}
+	&__city {
+		color: $color-secondary;
+	}
 
-.text-bold {
-	font-weight: $font-weight-title;
-}
-
-.text-underlined-colored {
-	text-decoration: underline;
-	color: $color-link;
+	&--text-style {
+		text-decoration: underline;
+		color: $color-link;
+	}
 }

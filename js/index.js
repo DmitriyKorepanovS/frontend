@@ -1,15 +1,15 @@
 function renderData() {
     const selectId = {
-        statusInfo: document.getElementById('statusInfo'),
-        phoneNumber: document.getElementById('phoneNumber'),
+        status: document.getElementById('status'),
+        phonenumber: document.getElementById('phonenumber'),
         emailData: document.getElementById('emailData'),
-        userName: document.getElementById('userName')
+        username: document.getElementById('username')
     }
 
-    selectId.statusInfo.innerHTML = currentView.statusInfo;
-    selectId.phoneNumber.innerHTML = currentView.phoneNumber;
+    selectId.status.innerHTML = currentView.status;
+    selectId.phonenumber.innerHTML = currentView.phonenumber;
     selectId.emailData.innerHTML = currentView.emailData;
-    selectId.userName.innerHTML = currentView.userName;
+    selectId.username.innerHTML = currentView.username;
 }
 renderData()
 
@@ -18,9 +18,9 @@ function addListener() {
     document.getElementById('newInterest').addEventListener("click", addInterest)
     document.getElementById('sectionInterest').addEventListener("click", deleteInterest)
 
-    makeListnerChangeData('statusInfo', 'familyStatus')
-    makeListnerChangeData('userName', 'input')
-    makeListnerChangeData('phoneNumber', 'phoneNumberInput')
+    makeListnerChangeData('status', 'familyStatus')
+    makeListnerChangeData('username', 'input')
+    makeListnerChangeData('phonenumber', 'phoneNumberInput')
     makeListnerChangeData('emailData', 'emailInput')
 
     document.getElementById('formInterest').addEventListener('submit', function (event) {
@@ -94,7 +94,7 @@ function renderText(target, id, changeID) {
 function addInterest() {
     let inputData = document.getElementById('interestInput').value;
     let li = document.createElement('li');
-    li.setAttribute('class', 'interests');
+    li.setAttribute('class', 'interest__item');
     li.innerHTML = inputData;
     let sectionInterest = document.getElementById('sectionInterest');
 
@@ -104,7 +104,7 @@ function addInterest() {
 }
 
 function deleteInterest() {
-    if (event.target.className === 'interests') {
+    if (event.target.className === 'interest__item') {
         let currentElement = event.target;
         currentElement.parentNode.removeChild(currentElement);
     }

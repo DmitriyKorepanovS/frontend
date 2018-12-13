@@ -47,10 +47,10 @@ body {
 
 .tab {
   display: none;
-  background-color: white;
-  padding: 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
   max-height: 333px;
   overflow: auto;
 }
@@ -80,7 +80,7 @@ body {
   border-radius: 5px;
 }
 
-.information {
+.wrap-about-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,61 +92,50 @@ body {
   width: 100%;
   line-height: 1.5;
 }
-.information__about-user {
+
+.user-info__details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.user-name {
+.user-info__name {
   font-weight: bold;
   font-size: 20px;
 }
-
-.user-name-input,
-.family-status,
-.phone-number,
-.email-input {
+.user-info__change-name-input, .user-info__change-family-status-input, .user-info__change-phone-input, .user-info__change-email-input {
   display: none;
 }
-
-.data {
+.user-info__data {
   padding: 0 0 0 20px;
 }
-
-.form {
+.user-info__titles-details {
   width: 50%;
   font-weight: bold;
 }
-
-.text-style-city {
+.user-info__city {
   color: lightgray;
 }
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-underlined-colored {
+.user-info--text-style {
   text-decoration: underline;
   color: blue;
 }
 
-.interests {
+.interest__title {
+  font-weight: bold;
+}
+.interest__item {
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   color: #1672af;
   padding: 2px;
   margin: 5px;
 }
-
-.interests:hover {
+.interest__item:hover {
   background: #8bb9d7;
   cursor: pointer;
   color: white;
 }
-
-.new-interest {
+.interest__btn {
   display: inline-block;
   border: 1px solid black;
   background: #1672af;
@@ -225,12 +214,12 @@ body {
     justify-content: space-around;
   }
 
-  .form {
+  .user-info__titles-details {
     width: 30%;
   }
 
-  .data {
-    padding: 0 0 0 24px;
+  .user-info__data {
+    padding: 24px 0 0 20px;
   }
 
   .profile__avatar {

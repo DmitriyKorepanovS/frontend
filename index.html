@@ -26,38 +26,38 @@
                         <div class="profile__avatar"></div>
                         <p><button class="profile__btn">Добавить в друзья</button></p>
                     </div>
-                    <div class="information">
-                        <div class="information__nameAndCity" id="name">
-                            <p class="user-name" id="userName"></p>
-                            <input class="user-name-input" id="input" type="text">
-                            <p class="text-style-city">г. Нижние Шахты</p>
-                        </div>
-                        <div class="information__about-user">
-                            <div class="titles">
-                                <p>Cемейное положение</p>
-                                <p>Телефон</p>
-                                <p>E-mail</p>
-                            </div>
-                            <div class="data" id="data">
-                                <input class="family-status" id="familyStatus">
-                                <p id="statusInfo"></p>
-                                <input class="phone-number" id="phoneNumberInput">
-                                <p id="phoneNumber"></p>
-                                <input class="email-input" id="emailInput">
-                                <p id="emailData" class="text-underlined-colored"></p>
+                    <div class="wrap-about-user">
+                        <div class="user-info">
+                            <p class="user-info__name" id="username"></p>
+                            <input class="user-info__change-name-input" id="input" type="text">
+                            <p class="user-info__city">г. Нижние Шахты</p>
+                            <div class="user-info__details">
+                                <div class="user-info__titles-details">
+                                    <p class="user-info__item">Cемейное положение</p>
+                                    <p class="user-info__item">Телефон</p>
+                                    <p class="user-info__item">E-mail</p>
+                                </div>
+                                <div class="user-info__data" id="data">
+                                    <input class="user-info__change-family-status-input" id="familyStatus">
+                                    <p class="user-info__item" id="status"></p>
+                                    <input class="user-info__change-phone-input" id="phoneNumberInput">
+                                    <p class="user-info__item" id="phonenumber"></p>
+                                    <input class="user-info__change-email-input" id="emailInput">
+                                    <p class="user-info__item user-info--text-style" id="emailData"></p>
+                                </div>
                             </div>
                         </div>
                         <br>
-                        <div class="information__interest">
-                            <h3 class="text-bold">Интересы</h3>
-                            <form id="formInterest">
-                                <input type="text" id="interestInput">
-                                <div class="new-interest" id="newInterest">Добавить интерес</div>
+                        <div class="interest">
+                            <h3 class="interest__title">Интересы</h3>
+                            <form class= "interest__form" id="formInterest">
+                                <input class="interest__add-interest-input" type="text" id="interestInput">
+                                <div class="interest__btn" id="newInterest">Добавить интерес</div>
                             </form>
-                            <ul id="sectionInterest">
-                                <li class="interests">Музыка</li>
-                                <li class="interests">Компьютеры</li>
-                                <li class="interests">Радио</li>
+                            <ul class="interest__list" id="sectionInterest">
+                                <li class="interest__item">Музыка</li>
+                                <li class="interest__item">Компьютеры</li>
+                                <li class="interest__item">Радио</li>
                             </ul>
                         </div>
                     </div>

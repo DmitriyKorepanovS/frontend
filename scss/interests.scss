@@ -1,22 +1,28 @@
-.interests {
-	display: inline-block;
-	border: 1px solid $color-black;
-	color: $color-third;
-	padding: $padding-interests;
-	margin: $margin;
-}
+.interest {
+	&__title {
+		font-weight: $font-weight-title;
+	}
 
-.interests:hover {
-	background: $color-hover;
-	cursor: pointer;
-	color: $color-main;
-}
+	&__item {
+		display: inline-block;
+		border: 1px solid $color-secondary;
+		color: $color-third;
+		padding: $padding-interests;
+		margin: $margin;
+	}
 
-.new-interest {
-	display: inline-block;
-	border: 1px solid $color-black;
-	background: $color-third;
-	color: $color-main;
-	padding: $padding-interests;
-	margin: $margin;
+	&__item:hover {
+		background: $color-hover;
+		cursor: pointer;
+		color: $color-main;
+	}
+
+	&__btn {
+		display: inline-block;
+		border: 1px solid $color-black;
+		background: $color-third;
+		color: $color-main;
+		padding: $padding-interests;
+		margin: $margin;
+	}
 }

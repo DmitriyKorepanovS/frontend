@@ -25,19 +25,19 @@
 		justify-content: space-around;
 	}
 
-	.titles {
+	.user-info__titles-details {
 		width: 30%;
-
 	}
 
-	.data {
-		padding:$padding-data-media;
+	.user-info__data {
+		padding: $padding-data-media;
 	}
 
 	.profile__avatar {
 		width: 100px;
 		height: 128px;
 	}
+
 	.friend {
 		width: auto;
 	}
