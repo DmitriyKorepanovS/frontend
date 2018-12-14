@@ -1,7 +1,7 @@
 const defaultView = {
     status: 'холост',
     phonenumber: '+7 (440) 554-32-12',
-    emailData: 'vitalya@gora.ru',
+    email: 'vitalya@gora.ru',
     username: 'Виталя Гора'
 };
 

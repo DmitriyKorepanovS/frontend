@@ -2,13 +2,13 @@ function renderData() {
     const selectId = {
         status: document.getElementById('status'),
         phonenumber: document.getElementById('phonenumber'),
-        emailData: document.getElementById('emailData'),
+        email: document.getElementById('email'),
         username: document.getElementById('username')
     }
 
     selectId.status.innerHTML = currentView.status;
     selectId.phonenumber.innerHTML = currentView.phonenumber;
-    selectId.emailData.innerHTML = currentView.emailData;
+    selectId.email.innerHTML = currentView.email;
     selectId.username.innerHTML = currentView.username;
 }
 renderData()
@@ -21,11 +21,11 @@ function addListener() {
     makeListnerChangeData('status', 'familyStatus')
     makeListnerChangeData('username', 'input')
     makeListnerChangeData('phonenumber', 'phoneNumberInput')
-    makeListnerChangeData('emailData', 'emailInput')
+    makeListnerChangeData('email', 'emailinput')
 
-    document.getElementById('formInterest').addEventListener('submit', function (event) {
-        event.preventDefault();
-    })
+    // document.getElementById('formInterest').addEventListener('submit', function (event) {
+    //     event.preventDefault();
+    // })
 
     function makeListnerChangeData(idForChange, idForInput) {
         document.getElementById(idForChange).addEventListener("click", function () {
@@ -92,7 +92,7 @@ function renderText(target, id, changeID) {
 }
 
 function addInterest() {
-    let inputData = document.getElementById('interestInput').value;
+    let inputData = document.getElementById('interestinput').value;
     let li = document.createElement('li');
     li.setAttribute('class', 'interest__item');
     li.innerHTML = inputData;
